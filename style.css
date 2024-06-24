@@ -1,0 +1,245 @@
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  background-color: #e6f2e6;
+  font-size: 14px;
+}
+
+nav {
+  background-color: #4caf50;
+  padding: 0.5rem;
+  color: white;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 0.5rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
+  padding: 10px;
+}
+
+#map img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.split-screen {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-panel,
+.right-panel {
+  width: 48%;
+}
+
+form {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="url"],
+input[type="month"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+#attendance {
+  margin-bottom: 8px;
+}
+
+#attendance div {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.seller-card {
+  background: #fff;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.seller-card:hover {
+  transform: translateY(-3px);
+}
+
+.seller-card button {
+  display: inline-block;
+  width: auto;
+  padding: 4px 8px;
+  margin-right: 4px;
+}
+
+.seller-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+#commentSection {
+  background: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.comment {
+  background: #f9f9f9;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 3px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.view-animation {
+  animation: fadeIn 0.5s;
+}
+
+.promotion {
+  background: #ffeb3b;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 5px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
